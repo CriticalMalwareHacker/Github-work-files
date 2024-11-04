@@ -2,7 +2,7 @@ name=input('Hi what is your name? ')
 def somename(name,food,food2='Pizzas'):
     if name.lower()=='tanay':
         print(f'welcome {name} to the restaurant')
-    print(f"hello {name}. Let's eat some {food} and some {food2}")
+    print(f"hello {name}. Let's eat some {food} and some {food2}")          
 
 somename(name,'bananas')#passing values from a function
 
