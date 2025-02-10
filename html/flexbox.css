@@ -2,17 +2,19 @@ body {
     min-height: 800px;
     border: 8px solid black;
     display: flex;
-    row-gap: 20px;
-    column-gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-end;
 
 }
 
+#box-1 {
+    margin-right: auto;
+}
+
 .box {
+    flex-shrink: 1;
+    min-width: 100px;
     height: 200px;
     width: 200px;
     background-color: lightblue;
@@ -21,4 +23,10 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+
+@media(max-width:575px) {
+    body {
+        flex-wrap: wrap;
+    }
 }
